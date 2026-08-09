@@ -1,0 +1,21 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// --- Network Settings ---
+const char* WIFI_SSID     = "YOUR_ROUTER_A_SSID";
+const char* WIFI_PASSWORD = "YOUR_ROUTER_A_PASSWORD";
+
+// --- Telegram Alert API Settings ---
+#define TELEGRAM_BOT_TOKEN "123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ"
+#define TELEGRAM_CHAT_ID   "YOUR_TELEGRAM_CHAT_ID"
+
+// --- Tuning Parameters ---
+const char* PING_TARGET = "8.8.8.8";        // Target to monitor link quality
+const float LATENCY_THRESHOLD_MS = 450.0;   // Trigger point for ISP throttling
+const int MAX_FAIL_STREAK = 5;              // Minimum bad checks required to failover
+
+// --- Hardware Layout ---
+const int RELAY_PRIMARY_WAN = 25;           // GPIO pin for Router A relay
+const int RELAY_BACKUP_WAN  = 26;           // GPIO pin for Router B relay
+
+#endif
