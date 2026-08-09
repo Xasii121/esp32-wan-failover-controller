@@ -1,0 +1,9 @@
+# Ignore local credentials file
+config.h
+
+# Ignore compilation builds and binaries
+/.build/
+/build/
+*.hex
+*.elf
+*.bin
